@@ -1,0 +1,21 @@
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtualenv
+.venv/
+
+# Demucs temp folders
+_demucs_temp/
+_demucs_test_out/
+
+# Web runtime uploads/results (NOTE: user asked to keep mp3 results & logs in repo,
+# so we do NOT ignore web/results/ or logs here.)
+web/uploads/
+web/tmp/
+

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Separar vocais / instrumental</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>Separar vocais e instrumental</h1>
+        <p class="muted">
+          Formatos aceitos: <strong>{{ allowed }}</strong> · Limite: <strong>{{ max_mb }} MB</strong> · Duração máx:
+          <strong>{{ max_seconds }}s</strong>
+        </p>
+      </header>
+
+      <section class="card">
+        <div class="row">
+          <input id="file" type="file" accept=".mp3,.wav,.flac,audio/*" />
+          <button id="btnUpload">Importar e processar</button>
+        </div>
+        <div class="row">
+          <div id="status" class="status muted">Aguardando arquivo…</div>
+        </div>
+        <div class="row">
+          <progress id="progress" value="0" max="100" class="progress hidden"></progress>
+        </div>
+      </section>
+
+      <section id="player" class="card hidden">
+        <div class="grid2">
+          <div>
+            <h2>Instrumental</h2>
+            <audio id="audioInst" controls preload="metadata"></audio>
+            <label class="slider">
+              <span>Volume instrumental</span>
+              <input id="volInst" type="range" min="0" max="1" step="0.01" value="1" />
+            </label>
+            <a id="dlInst" class="linkbtn" download>Baixar instrumental</a>
+          </div>
+
+          <div>
+            <h2>Vocais</h2>
+            <audio id="audioVoc" controls preload="metadata"></audio>
+            <label class="slider">
+              <span>Volume vocais</span>
+              <input id="volVoc" type="range" min="0" max="1" step="0.01" value="1" />
+            </label>
+            <a id="dlVoc" class="linkbtn" download>Baixar vocais</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <button id="btnSync">Sincronizar (play/pause)</button>
+          <button id="btnReset">Voltar ao início</button>
+        </div>
+        <p class="muted small">
+          Dica: dê play em um deles; a interface mantém o outro sincronizado e aplica os volumes separadamente.
+        </p>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
+

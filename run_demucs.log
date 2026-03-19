@@ -1,0 +1,35 @@
+Traceback (most recent call last):
+  File "/Users/juliocesardeamorim/Desktop/teste/.venv/lib/python3.13/site-packages/torchaudio/_torchcodec.py", line 82, in load_with_torchcodec
+    from torchcodec.decoders import AudioDecoder
+ModuleNotFoundError: No module named 'torchcodec'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/juliocesardeamorim/Desktop/teste/.venv/lib/python3.13/site-packages/demucs/__main__.py", line 10, in <module>
+    main()
+    ~~~~^^
+  File "/Users/juliocesardeamorim/Desktop/teste/.venv/lib/python3.13/site-packages/demucs/separate.py", line 168, in main
+    wav = load_track(track, model.audio_channels, model.samplerate)
+  File "/Users/juliocesardeamorim/Desktop/teste/.venv/lib/python3.13/site-packages/demucs/separate.py", line 38, in load_track
+    wav, sr = ta.load(str(track))
+              ~~~~~~~^^^^^^^^^^^^
+  File "/Users/juliocesardeamorim/Desktop/teste/.venv/lib/python3.13/site-packages/torchaudio/__init__.py", line 86, in load
+    return load_with_torchcodec(
+        uri,
+    ...<6 lines>...
+        backend=backend,
+    )
+  File "/Users/juliocesardeamorim/Desktop/teste/.venv/lib/python3.13/site-packages/torchaudio/_torchcodec.py", line 84, in load_with_torchcodec
+    raise ImportError(
+        "TorchCodec is required for load_with_torchcodec. " "Please install torchcodec to use this function."
+    ) from e
+ImportError: TorchCodec is required for load_with_torchcodec. Please install torchcodec to use this function.
+Selected model is a bag of 4 models. You will see that many progress bars per track.
+Separated tracks will be stored in /Users/juliocesardeamorim/Desktop/teste/_demucs_temp/_work_parte1/htdemucs_ft
+Separating track /Users/juliocesardeamorim/Desktop/teste/parte1.mp3
+Falha em /Users/juliocesardeamorim/Desktop/teste/parte1.mp3: Command '['/Users/juliocesardeamorim/Desktop/teste/.venv/bin/python', '-m', 'demucs', '-n', 'htdemucs_ft', '--two-stems', 'vocals', '-o', '/Users/juliocesardeamorim/Desktop/teste/_demucs_temp/_work_parte1', '/Users/juliocesardeamorim/Desktop/teste/parte1.mp3', '-d', 'mps']' returned non-zero exit status 1.
+
+>>> Demucs (htdemucs_ft): parte1.mp3
