@@ -23,6 +23,14 @@ python web/app.py
 
 Open: `http://127.0.0.1:5173`
 
+## Documentation
+
+For detailed documentation, see the [`docs/`](docs/README.md) folder with guides on:
+- [What it is and how it works](docs/COMO_FUNCIONA.md)
+- [Installation](docs/INSTALACAO.md)
+- [How to use](docs/COMO_USAR.md)
+- [Frequently asked questions](docs/PERGUNTAS_FREQUENTES.md)
+
 ## Notes
 
 - On **macOS**, MP3 decoding uses `afconvert` (built-in), so you don't need FFmpeg.
@@ -31,4 +39,3 @@ Open: `http://127.0.0.1:5173`
 ## License
 
 MIT — see `LICENSE`.
-
