@@ -1,5 +1,7 @@
 # music-stem-separator
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Open source Python tool to remove vocals or instrumentals from songs with a simple web interface.
 
 ## Features
@@ -31,4 +33,3 @@ Open: `http://127.0.0.1:5173`
 ## License
 
 MIT — see `LICENSE`.
-
