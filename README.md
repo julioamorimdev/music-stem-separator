@@ -11,6 +11,21 @@ Open source Python tool to remove vocals or instrumentals from songs with a simp
   - **Instrumental** (`*_instrumental.mp3`)
 - Web UI with two synced players and independent volume controls + download
 
+## Requisitos
+
+- **Python**: 3.8 ou superior
+- **Bibliotecas de áudio**:
+  - `librosa`: ≥ 0.9.2 (processamento e análise de áudio)
+  - `soundfile`: ≥ 0.10.0 (leitura/escrita de arquivos de áudio)
+  - `pydub`: ≥ 0.25.1 (manipulação de áudio MP3, WAV, FLAC)
+  - `numpy`: ≥ 1.21.0 (operações numéricas)
+  - `scipy`: ≥ 1.7.0 (processamento de sinais)
+- **Dependências web**:
+  - `flask`: ≥ 2.0.0 (framework web)
+  - `flask-cors`: ≥ 3.0.10 (suporte a CORS)
+- **Separação de stems**:
+  - `demucs`: ≥ 4.0.0 (modelo de separação de áudio)
+
 ## Quick start (macOS)
 
 ```bash
@@ -31,4 +46,3 @@ Open: `http://127.0.0.1:5173`
 ## License
 
 MIT — see `LICENSE`.
-
