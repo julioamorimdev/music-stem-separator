@@ -1,34 +1,42 @@
 # music-stem-separator
 
-Open source Python tool to remove vocals or instrumentals from songs with a simple web interface.
+Ferramenta open source em Python para remover vocais ou instrumentais de músicas com uma interface web simples.
 
-## Features
+## Funcionalidades
 
-- Upload `.mp3`, `.wav` or `.flac`
-- Validates **file size** and **duration**
-- Separates into:
-  - **Vocals** (`*_vocals.mp3`)
+- Upload de `.mp3`, `.wav` ou `.flac`
+- Validação de **tamanho** e **duração** do arquivo
+- Separa em:
+  - **Vocais** (`*_vocals.mp3`)
   - **Instrumental** (`*_instrumental.mp3`)
-- Web UI with two synced players and independent volume controls + download
+- Interface web com dois players sincronizados e controle de volume independente + download
 
-## Quick start (macOS)
+## Início Rápido
+
+Para setup e instalação detalhados, veja [Documentação Completa](docs/README.md).
 
 ```bash
-cd /Users/juliocesardeamorim/Desktop/teste
+cd seu-projeto
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 python web/app.py
 ```
 
-Open: `http://127.0.0.1:5173`
+Abra: `http://127.0.0.1:5173`
 
-## Notes
+## Documentação
 
-- On **macOS**, MP3 decoding uses `afconvert` (built-in), so you don't need FFmpeg.
-- First run may require downloading Demucs model weights. If SSL fails, see `README_INSTRUMENTAL.md`.
+- **[Setup](docs/SETUP.md)** - Instalação e configuração
+- **[Estrutura do Projeto](docs/ESTRUTURA.md)** - Organização de pastas
+- **[Como Usar](docs/README.md)** - Guia de uso
+- **[Contribuindo](docs/CONTRIBUINDO.md)** - Como contribuir
 
-## License
+## Notas
 
-MIT — see `LICENSE`.
+- No **macOS**, decodificação MP3 usa `afconvert` (built-in), sem necessidade de FFmpeg
+- Primeira execução pode precisar baixar pesos do modelo Demucs
 
+## Licença
+
+MIT — veja `LICENSE`.
