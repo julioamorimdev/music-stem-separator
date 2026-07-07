@@ -2,3 +2,4 @@
 demucs>=4.0.0
 soundfile>=0.12
 flask>=3.0
+python-dotenv>=1.0
