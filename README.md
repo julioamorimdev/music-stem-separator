@@ -34,6 +34,7 @@ Abra: `http://127.0.0.1:5173`
 - **[Setup](docs/SETUP.md)** - Instalação e configuração
 - **[Estrutura do Projeto](docs/ESTRUTURA.md)** - Organização de pastas
 - **[Como Usar](docs/README.md)** - Guia de uso
+- **[Detalhes Técnicos Instrumentais](docs/instrumental.md)** - Informações avançadas sobre processamento com Demucs
 - **[Contribuindo](docs/CONTRIBUINDO.md)** - Como contribuir
 
 ## Notas

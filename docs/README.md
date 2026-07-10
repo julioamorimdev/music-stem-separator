@@ -66,3 +66,4 @@ Abra seu navegador em: **http://127.0.0.1:5173**
 - Leia o [Guia de Setup](SETUP.md) para detalhes técnicos
 - Conheça a [Estrutura do Projeto](ESTRUTURA.md)
 - Veja [Como Contribuir](CONTRIBUINDO.md)
+- Confira os [Detalhes Técnicos Instrumentais](instrumental.md) para informações avançadas sobre o processamento de áudio
