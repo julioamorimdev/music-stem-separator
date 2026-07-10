@@ -1,3 +1,7 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
+[![Status](https://img.shields.io/badge/Status-Development-orange.svg)](#)
+
 # music-stem-separator
 
 Ferramenta open source em Python para remover vocais ou instrumentais de músicas com uma interface web simples.
