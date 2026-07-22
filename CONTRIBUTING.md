@@ -1,56 +1,23 @@
-# Guia de Contribuição
-
-Obrigado por contribuir! Este guia explica como preparar seu ambiente, testar e submeter alterações.
+# Contribuindo
 
 ## Configurar Ambiente
 
-1. Faça um fork e clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/projeto.git
-   cd projeto
-   ```
-
-2. Instale as dependências:
-   ```bash
-   npm install
-   ```
-   (ou `pip install -r requirements.txt`, `yarn install`, conforme o projeto)
-
-3. Crie uma branch para sua feature:
-   ```bash
-   git checkout -b minha-feature
-   ```
+1. Clone o repositório
+2. Crie um ambiente virtual: `python -m venv venv`
+3. Ative o ambiente: `source venv/bin/activate` (Linux/Mac) ou `venv\Scripts\activate` (Windows)
+4. Instale as dependências: `pip install -r requirements.txt`
 
 ## Rodar Testes
 
-Antes de submeter, execute os testes:
-
 ```bash
-npm test
+pytest
 ```
-
-Certifique-se de que todos os testes passam e o código segue o padrão do projeto.
 
 ## Abrir um Pull Request
 
-1. Commit suas mudanças com mensagens claras:
-   ```bash
-   git add .
-   git commit -m "Descrição breve da mudança"
-   ```
+1. Crie uma branch a partir de `main`: `git checkout -b minha-feature`
+2. Commit suas mudanças: `git commit -m "Descrição clara da mudança"`
+3. Push para o repositório: `git push origin minha-feature`
+4. Abra um Pull Request no GitHub com uma descrição detalhada
 
-2. Push para seu fork:
-   ```bash
-   git push origin minha-feature
-   ```
-
-3. Abra um Pull Request no repositório principal com:
-   - Título descritivo
-   - Explicação do que foi alterado e por quê
-   - Referência a issues relacionadas (se houver)
-
-4. Aguarde revisão da equipe
-
-## Dúvidas?
-
-Abra uma issue para discussões ou entre em contato com os mantenedores.
+Obrigado por contribuir!
